@@ -1,7 +1,7 @@
 {
   "Test":{
     "dbConfig":{
-      "dbName":"test"
+      "dbName":"second-sale"
     }
   }
 }
