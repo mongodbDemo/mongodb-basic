@@ -1,7 +1,7 @@
 const MongoClient=require("./helps/mongodb");
 const url=require("./helps/get-url");
 
-var findOne = (db, callback)=> {
+var find_one = (db, callback)=> {
        const collection=db.collection("users");
        collection.findOne({name:"Bob"},(err,result)=>{
            if(err){
@@ -16,7 +16,7 @@ var findOne = (db, callback)=> {
 
 MongoClient.connect(url, (err, db)=> {
     console.log("连接成功！");
-    findOne(db,(result)=>{
+    find_one(db,(result)=>{
       console.log(result);
     });
 });
