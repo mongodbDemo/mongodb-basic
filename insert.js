@@ -4,8 +4,8 @@ const url=require("./helps/get-url");
 var insertData = (db, callback)=> {
     const collection=db.collection("users");
     //要插入的数据
-    const data=[{"name":"Look","age":"45"},
-               {"name":"Rose","age":"27"}];
+    const data=[{name:"Look",age:"45"},
+        {name:"Rose",age:"27"}];
     collection.insert(data,(err,result)=>{
         if(err){
             console.log("ERROR");
